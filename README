@@ -23,7 +23,13 @@ How to contribute to it
 	Contact author @ https://gitter.im/tightcode
 	
 Version History / Release Notes
+	1.0.0-alpha.1
+		-Updated README
+		-Simplified/minimized selectors
 	1.0.0-alpha
-		-Default navbar support
+		-Works on default, static top and fixed top navbars
 	0.1
 		-Initial commit
+
+Todo
+	-Order of CSS rules
