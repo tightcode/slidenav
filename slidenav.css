@@ -1,0 +1,38 @@
+/* 1.0.0-alpha Modify selector */
+.navbar-default .dropdown>div>.dropdown-menu {
+	margin-top: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+/* 1.0.0-alpha Make dropdown-menu styles consistent with those of when it's open */
+@media (max-width: 767px) {
+	.navbar-default .dropdown-menu {
+		box-shadow: none;
+		position: relative;
+		overflow: hidden;
+		border-width: 0;
+		background-color: transparent;
+	}
+	.navbar-default .dropdown-header {
+		padding: 5px 15px 5px 25px;
+	}
+	.navbar-default .dropdown-menu>li>a {
+		color: #777;
+		padding: 5px 15px 5px 25px;
+	}
+}
+@media (min-width: 768px) {
+	/* 1.0.0-alpha Add style to "dropdown-menu" wrapper */
+	.navbar-default .dropdown>div {
+		position: absolute;
+		clip: rect(1px, 9999px, 9999px, -9999px);
+	}
+	/* 1.0.0-alpha Jqueryui box-shadow clip fix */
+	.navbar-default .jqui-slide>div .dropdown-menu {
+		clip: auto!important;
+	}
+	/* 1.0.0-alpha IE Edge 16 list-style fix */
+	.navbar-default .dropdown-menu>li {
+		list-style-image: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7);
+	}
+}
