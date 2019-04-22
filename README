@@ -1,32 +1,39 @@
 Slidenav
 
 What the project is for
-	Responsive Bootstrap dropdown slide animation effects plugin
-	
+	Bootstrap 3 dropdown slide effects animation plugin
+		-Works with default, static top and fixed navbars ( See https://getbootstrap.com/docs/3.3/getting-started/#examples-navbars )
+
 How to configure and install it
 	Markup
-		Note: Include required CSS and JS in correct order
-		1. Add slide animation class of choice to "dropdown"
-			"jq-slide" and "jqui-slide" for jquery and jqueryui slide effects respectively
-		2. Wrap "dropdown-menu" with a div
+		Note: Include Slidenav CSS and JS in correct order
+		1. Add slide effect animation class to "dropdown" element
+			-.jq-slide for Jquery slide effect
+			-.jqui-slide for JqueryUI slide effect
+		2. Wrap "dropdown-menu" element with div
 	JavaScript
-		3. Add slide animation script to your JavaScript
-		
+		Note: JqueryUI required for JqueryUI slide effect
+		3. Add slide effect animation script to your JavaScript
+
 An example of how to use it or get it running
-	Extract files for example/examples
-	
+	https://tightcode.github.io/slidenav
+
 The license that the project is offered under
 	The MIT License
-	
-How to contribute to it
-	If bug/bugs found, open an issue
-	Contact author @ https://gitter.im/tightcode
-	
+
+Contributing
+	Author: tightcode
+			Github: https://github.com/tightcode
+			Email: tightcodedev@gmail.com
+
 Version History / Release Notes
+	1.0.0-alpha.2
+		-update readme
+		-update code
 	1.0.0-alpha.1
-		-Updated README
-		-Simplified/minimized selectors
+		-update readme
+		-update code
 	1.0.0-alpha
-		-Works on default, static top and fixed top navbars
+		-initial release
 	0.1
-		-Initial commit
+		-initial commit

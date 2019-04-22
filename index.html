@@ -16,7 +16,7 @@
     <!-- Custom styles for this template -->
     <link href="navbar.css" rel="stylesheet">
 		
-    <!-- 1.0.0-alpha Slidenav styles -->
+    <!-- Include Slidenav CSS -->
     <link href="slidenav.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -47,10 +47,10 @@
               <li class="active"><a href="#">Home</a></li>
               <li><a href="#">About</a></li>
               <li><a href="#">Contact</a></li>
-              <!-- 1.0.0-alpha Add slide animation class of choice to "dropdown" -->
+              <!-- Add slide effect animation class to "dropdown" element -->
 							<li class="dropdown jqui-slide">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-								 <!-- 1.0.0-alpha Wrap "dropdown-menu" with a div -->
+								<!-- Wrap "dropdown-menu" element with div -->
 								<div>
 									<ul class="dropdown-menu">
 										<li><a href="#">Action</a></li>
@@ -89,18 +89,25 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<!-- 1.0.0-alpha Include JqueryUI -->
+		<!-- ..required for JqueryUI slide effect -->
 		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-		<!-- 1.0.0-alpha Add jquery/jqueryui slide animation script -->
+		<!-- Include Slidenav.. JS -->
 		<script>
+			/*!
+			 * Slidenav v1.0.0-alpha.2 ( https://github.com/tightcode/slidenav )
+			 * Licensed under the MIT license
+			 */
+			 
+			// Jquery slide effect
 			$('.jq-slide').on('show.bs.dropdown', function() {
 				$(this).find('.dropdown-menu').first().stop(true, true).slideDown();
 			});
 			$('.jq-slide').on('hide.bs.dropdown', function() {
 				$(this).find('.dropdown-menu').first().stop(true, true).slideUp();
 			});
-			
+
+			// JqueryUI slide effect
 			$('.jqui-slide').on('show.bs.dropdown', function() {
 				if (window.matchMedia("(max-width: 767px)").matches) {
 					$(this).find('.dropdown-menu').first().stop(true, true).slideDown(350);
