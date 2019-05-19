@@ -1,37 +1,7 @@
-/*!
- * Slidenav v1.0.0-alpha.2 ( https://github.com/tightcode/slidenav )
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
-.dropdown-menu {
-  margin-top: 0;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
-@media (max-width: 767px) {
-  .dropdown-menu {
-    box-shadow: none;
-    float: none;
-    position: static;
-    border: 0;
-    background-color: transparent;
-  }
-  .dropdown-header {
-    padding: 5px 15px 5px 25px;
-  }
-  .dropdown-menu>li>a {
-    color: #777;
-    padding: 5px 15px 5px 25px;
-  }
-}
+/* Slidenav 4.0.0-alpha ( https://github.com/tightcode/slidenav ) */
 @media (min-width: 768px) {
   .dropdown>div {
     position: absolute;
-    clip: rect(1px, 9999px, 9999px, -9999px);
-  }
-  .jqui-slide>div .dropdown-menu {
-    clip: auto!important;
-  }
-  .dropdown-menu>li {
-    list-style-image: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7);
+    clip: rect(0.5rem, 9999px, 9999px, -9999px);
   }
 }
