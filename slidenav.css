@@ -1,4 +1,4 @@
-/* Slidenav 4.1.0-alpha.3 ( https://github.com/tightcode/slidenav ) */
+/* Slidenav 4.1.1-alpha ( https://github.com/tightcode/slidenav ) */
 .dropdown-menu.collapsing {
   display: block;
 }
@@ -8,15 +8,9 @@
     margin-top: 0!important;
     border: 0!important;
   }
-  .dropdown-menu:before {
-    content: "";
-    display: block;
-    padding-top: .5rem;
-  }
-  .dropdown-menu:after {
-    content: "";
-    display: block;
-    padding-bottom: .5rem;
+  .dropdown-menu > div {
+    padding: .5rem 0;
+    border: 1px solid rgba(0,0,0,.15);
   }
 }
 @media (min-width: 768px) {

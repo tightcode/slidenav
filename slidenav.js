@@ -1,4 +1,4 @@
-/* Slidenav 4.1.0-alpha.3 ( https://github.com/tightcode/slidenav ) */
+/* Slidenav 4.1.1-alpha ( https://github.com/tightcode/slidenav ) */
 $(".dropdown").on("hide.bs.collapse", function() {
   $(this).find(".dropdown-menu").first().addClass( "sliding" )
 });
