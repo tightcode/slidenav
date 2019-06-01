@@ -1,4 +1,4 @@
-/* Slidenav 4.0.0-alpha.2 ( https://github.com/tightcode/slidenav ) */
+/* Slidenav 4.0.0-alpha.3 ( https://github.com/tightcode/slidenav ) */
 
 // CSS media feature is used to detect if the user has requested that the system minimize the amount of animation or motion it uses
 var mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -13,9 +13,7 @@ var slideSpeedInit = function () {
 };
 
 window.addEventListener("load", slideSpeedInit);
-if ("change" in window) {
-  mediaQuery.addEventListener("change", slideSpeedInit);
-}
+mediaQuery.addListener(slideSpeedInit);
 
 // Jquery slide effect
 $('.jq-slide').on('show.bs.dropdown', function() {
